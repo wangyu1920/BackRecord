@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">一键回录</string>
+    <string name="share_failure">false</string>
+    <string name="start_back_record">开始回录</string>
+</resources>

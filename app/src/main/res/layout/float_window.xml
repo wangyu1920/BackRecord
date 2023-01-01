@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/float_root">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/prepare_record"
+            android:id="@+id/float_video_img"
+            android:background="@drawable/float_window_background"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>
