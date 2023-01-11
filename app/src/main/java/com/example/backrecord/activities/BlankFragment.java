@@ -54,7 +54,7 @@ public class BlankFragment extends Fragment {
     public static final int FLAG_MOVIES = 1;
     public static final int FLAG_HELP = 2;
     private int mFlag;
-    private int fileNum;
+    private int fileNum=-1;
     private File oldLastFile;
 
     private int mParam1;
@@ -126,6 +126,9 @@ public class BlankFragment extends Fragment {
     private void reFlashMoviesPage() {
         try {
             File[] fileLists = (File[]) DocumentFileUtils.getFileLists(getContext(), DbHelper.VIDEO_FOLDER_PATH);
+            if (fileLists.length == 0) {
+                return;
+            }
             //如果当前文件列表数量与之前相同并且列表尾部文件也与之前相同，不刷新页面
             if (fileLists.length == fileNum&&fileLists[fileLists.length-1].equals(oldLastFile)) {
                 return;
@@ -156,6 +159,9 @@ public class BlankFragment extends Fragment {
     private List<MyRecyclerviewAdapter.ItemData> getDataList() throws FileNotFoundException {
         File[] files = (File[]) DocumentFileUtils.getFileLists(getContext(), DbHelper.VIDEO_FOLDER_PATH);
         fileNum = files.length;
+        if (fileNum == 0) {
+            return new LinkedList<>();
+        }
         oldLastFile = files[fileNum - 1];
         System.out.println(files.length);
         List<MyRecyclerviewAdapter.ItemData> dataList = new LinkedList<>();
@@ -169,6 +175,11 @@ public class BlankFragment extends Fragment {
     //从头初始化recyclerview
     private void initMoviesPage() {
         try {
+            File file = new File(DbHelper.VIDEO_FOLDER_PATH.replace("/document/primary:", "/storage/emulated/0/"));
+            if (!file.exists()) {
+                Toast.makeText(getContext(),"还没有录制视频",Toast.LENGTH_SHORT).show();
+                return;
+            }
             List<MyRecyclerviewAdapter.ItemData> dataList = getDataList();
             RecyclerView recyclerView = rootView.findViewById(R.id.fragment_movies_recyclerview);
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
