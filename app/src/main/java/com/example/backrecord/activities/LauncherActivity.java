@@ -108,4 +108,10 @@ public class LauncherActivity extends AppCompatActivity implements View.OnClickL
                 break;
         }
     }
+    
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
+    }
 }
