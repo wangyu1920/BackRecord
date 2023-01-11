@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.BlankFragment"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_margin="3dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/main_activity_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="3dp"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="3dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="回录时长/s，过高会导致视频缓存过大影响手机性能甚至OOM" />
+                    <EditText
+                        android:id="@+id/set_duration"
+                        android:hint="回录时长"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="3dp"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="粗糙度，决定了视频分辨率，分辨率=你屏幕的分辨率/粗糙度。该值必须大于等于1。\n例如屏幕是1080x2400的，粗糙度=1.5，则视频分辨率为720x1600。视频分辨率不影响视频大小" />
+                    <EditText
+                        android:id="@+id/set_multiple"
+                        android:hint="粗糙度"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="3dp"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="3dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="帧率(这个参数大概率是无效的，实际视频的帧率等同于你的屏幕刷新率，但是不排除个别设备有效，故保存此选项)" />
+                    <EditText
+                        android:id="@+id/set_frame_rate"
+                        android:hint="帧率"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="3dp"
+                app:cardUseCompatPadding="true"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="3dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="比特率(码率)(bps)，过低会导致画面模糊，过高会导致视频缓存过大影响手机性能，一般要根据分辨率、帧率和视频画面的复杂度选择适当的比特率(参考：视频长×宽×游戏帧率÷15)" />
+                    <EditText
+                        android:id="@+id/set_bitrate"
+                        android:hint="比特率"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_margin="3dp"
+                    android:id="@+id/set_save_config"
+                    android:text="保存参数"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/set_expect_video_size"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/set_save_config"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/drawable/activity_launcher_bottom_view_text_color.xml" value="0.10277777777777777" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/drawable/bottom_view_text_color.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/drawable/float_window_background.xml" value="0.10277777777777777" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/drawable/recyclerview_item_backgroubd.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/layout/activity_lanucher.xml" value="0.15715579710144928" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/layout/activity_service_start.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/layout/float_window.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/layout/fragment_blank.xml" value="0.15715579710144928" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/layout/fragment_help.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/layout/fragment_movies.xml" value="0.12708333333333333" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/layout/fragment_setting.xml" value="0.152" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/layout/recyclerview_item.xml" value="0.11354166666666667" />
+        <entry key="..\:/Android/AndroidProject_New/BackRecord/app/src/main/res/xml/file_paths_public.xml" value="0.15715579710144928" />
+        <entry key="..\:/Android/AndroidProject_New/BcakRecord/app/src/main/res/drawable/float_window_background.xml" value="0.12552083333333333" />
+        <entry key="..\:/Android/AndroidProject_New/BcakRecord/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidProject_New/BcakRecord/app/src/main/res/layout/activity_main2.xml" value="0.159375" />
+        <entry key="..\:/Android/AndroidProject_New/BcakRecord/app/src/main/res/layout/activity_service_start.xml" value="0.1265625" />
+        <entry key="..\:/Android/AndroidProject_New/BcakRecord/app/src/main/res/layout/float_window.xml" value="0.12083333333333333" />
+        <entry key="..\:/Android/AndroidProject_New/BcakRecord/app2/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidProject_New/BcakRecord/app2/src/main/res/layout/dialog_file_chooser.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

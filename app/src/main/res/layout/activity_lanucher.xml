@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LauncherActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="#11000000"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/bv1"
+            android:background="@drawable/bottom_view_background"
+            android:text="设置"
+            android:textSize="35sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:id="@+id/bv2"
+            android:text="视频"
+            android:textSize="35sp"
+            android:background="@drawable/bottom_view_background"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/bv3"
+            android:text="帮助"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:background="@drawable/bottom_view_background"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>
