@@ -100,6 +100,12 @@ public class DocumentFileUtils {
                 return documentFile.listFiles();
             }
         } else {
+            if (!file.exists()) {
+                boolean mkdirs = file.mkdirs();
+                if (!mkdirs) {
+                    throw new FileNotFoundException("路径不存在且创建失败");
+                }
+            }
             File file = new File(path.replace("/document/primary:", "/storage/emulated/0/"));
             if (file.isDirectory()) {
                 return file.listFiles();
