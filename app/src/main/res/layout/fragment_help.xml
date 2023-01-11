@@ -108,7 +108,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="25sp"
-                        android:text="1、启动：在下拉菜单栏点击图标开始回录，在弹出的授权窗口点击立即开始" />
+                        android:text="1、启动：在下拉菜单栏点击图标开始回录(请在该app停止运行时操作，否则会跳转到app页面)，在弹出的授权窗口点击立即开始" />
 
 
 

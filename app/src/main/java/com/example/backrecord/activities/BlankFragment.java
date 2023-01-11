@@ -95,12 +95,10 @@ public class BlankFragment extends Fragment {
                 case FLAG_SETTING:
                     mFlag = FLAG_SETTING;
                     rootView = inflater.inflate(R.layout.fragment_setting, container, false);
-                    initSettingPage();
                     break;
                 case FLAG_MOVIES:
                     mFlag = FLAG_MOVIES;
                     rootView = inflater.inflate(R.layout.fragment_movies, container, false);
-                    initMoviesPage();
                     break;
                 case FLAG_HELP:
                     mFlag = FLAG_HELP;
@@ -118,6 +116,8 @@ public class BlankFragment extends Fragment {
         //因为文件列表是经常变动的，所以在此处判断
         if (mFlag == FLAG_MOVIES) {
             reFlashMoviesPage();
+        } else if (mFlag == FLAG_SETTING) {
+            initSettingPage();
         }
     }
 

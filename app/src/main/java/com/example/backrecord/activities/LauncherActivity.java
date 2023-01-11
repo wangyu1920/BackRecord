@@ -2,6 +2,7 @@ package com.example.backrecord.activities;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -108,10 +109,17 @@ public class LauncherActivity extends AppCompatActivity implements View.OnClickL
                 break;
         }
     }
-    
+
     @Override
     protected void onPause() {
         super.onPause();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Log.d("dddd", "onBackPressed: ");
         finish();
     }
+
 }
